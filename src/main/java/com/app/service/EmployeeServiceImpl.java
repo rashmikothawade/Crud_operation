@@ -20,8 +20,8 @@ public class EmployeeServiceImpl implements EmployeeService{
 	
 	@Override
 	public Employee getbyid(Integer id) {
-		er.findById(id);
-		return null;
+		Employee e=er.findById(id).get();
+		return e;
 	}
 
 }
